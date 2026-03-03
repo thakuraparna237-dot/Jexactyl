@@ -112,7 +112,7 @@ class NestSeeder extends Seeder
      *
      * @throws \Everest\Exceptions\Model\DataValidationException
      */
-    private function createSourceEngineNest(array $nest = null)
+    private function createVpsNest(array $nest = null)
     {
         if (is_null($nest)) {
             $this->creationService->handle([
