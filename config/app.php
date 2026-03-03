@@ -11,7 +11,7 @@ return [
     | change this value if you are not maintaining your own internal versions.
     */
 
-    'version' => '4.0.0-rc2',
+    'version' => '1.0.0-rc2',
 
     /*
     |--------------------------------------------------------------------------
@@ -70,7 +70,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Everest'),
+    'name' => env('APP_NAME', 'Shivambroog'),
 
     /*
     |--------------------------------------------------------------------------
