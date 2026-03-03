@@ -44,6 +44,7 @@ class NestSeeder extends Seeder
         $this->createSourceEngineNest(array_get($items, 'Source Engine'));
         $this->createVoiceServersNest(array_get($items, 'Voice Servers'));
         $this->createRustNest(array_get($items, 'Rust'));
+        $this->createMinecraftNest(array_get($items, 'Vps'));
     }
 
     /**
@@ -102,6 +103,21 @@ class NestSeeder extends Seeder
             $this->creationService->handle([
                 'name' => 'Rust',
                 'description' => 'Rust - A game where you must fight to survive.',
+            ], 'support@pterodactyl.io');
+        }
+    }
+    
+    /**
+     * Create the Vps server nest to be used later on.
+     *
+     * @throws \Everest\Exceptions\Model\DataValidationException
+     */
+    private function createSourceEngineNest(array $nest = null)
+    {
+        if (is_null($nest)) {
+            $this->creationService->handle([
+                'name' => 'Vps',
+                'description' => 'Includes support for Vps.',
             ], 'support@pterodactyl.io');
         }
     }
