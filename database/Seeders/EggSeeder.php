@@ -18,7 +18,8 @@ class EggSeeder extends Seeder
         'Minecraft',
         'Source Engine',
         'Voice Servers',
-        'Rust',
+        'Rust'
+        'Vps',
     ];
 
     /**
