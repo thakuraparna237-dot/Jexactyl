@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>{{ config('app.name', 'Everest') }}</title>
+        <title>{{ config('app.name', 'Casa-Og-panel') }}</title>
 
         @section('meta')
             <meta charset="utf-8">
